@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- <style>
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2, .mySlides3 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #f1f1f1;
+          color: black;
+        }
+        </style> -->
+      <title>RentMe</title>
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+      </head>
+      <body>
+        <header>
+          <h1>RentMe.com</h1>
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li class = "active"><a href="properties.html">Properties</a></li>
+              <li><a href="post.html">Post</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>     
+        <!-- <section class="properties-section">
+          <div tabindex = "0" class="property-card">
+            <p>Property 1:</p>
+          <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="images/property1.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/property2.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/property3.jpeg" style="width:100%">
+          </div>
+          <p>Location: Anytown, USA</p>
+          <p>Price: $500,000</p>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+           </div>
+         </div>
+
+        <div class="property-card">
+        <p>Property 2:</p>
+        <div class="slideshow-container">
+          <div class="mySlides2">
+            <img src="images/property4.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides2">
+            <img src="images/property5.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides2">
+            <img src="images/property6.jpeg" style="width:100%">
+          </div>
+          <p>Location: Anytown, USA</p>
+          <p>Price: $500,000</p>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <p>Property 3:</p>
+          <div class="slideshow-container">
+            <div class="mySlides3">
+              <img src="images/property7.jpeg" style="width:100%">
+            </div>
+  
+            <div class="mySlides3">
+              <img src="images/property8.jpeg" style="width:100%">
+            </div>
+  
+            <div class="mySlides3">
+              <img src="images/property9.jpeg" style="width:100%">
+            </div>
+            <p>Location: Anytown, USA</p>
+            <p>Price: $500,000</p>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="map-section">
+          <p>Interactive Map</p>
+        </section> -->
+
+<!-- <script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script> -->
+          
+          <section class="properties-section" id= "main">
+            <div tabindex = "0" class="property-card">
+              <div tabindex = "0" class="property-gallery">
+                <img src="images/property1.jpg" alt="Property Image1">
+              </div>
+              <h2>Property 1</h2>
+              <p>SUMMER SUBLEASE as soon as April 19th through end of August, although I am flexible with length of stay.
+                <br> <br>
+                On Cross Street just behind South Quad, so very close to campus! Parking spot available. Subleasing my bedroom in a house with 4 other girls, though only two are staying for the summer. This room was just refurbished this summer so everything is brand new. The room is in the basement, the only bedroom on that floor. Shared bathroom (also brand new) with one other housemate, though there may not be anyone living in that room this summer so it might be a personal bathroom.
+                <br> <br>
+                Kitchen and living room will be fully furnished for the whole summer. Bedroom can be left fully furnished or entirely empty. 
+                <br> <br>
+                Rent is $870/mo, not including utilities. 
+                <br> <br>
+                Message me if you’re interested!</p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property2.jpg" alt="Property Image2">
+              <h2>Property 2</h2>
+              <p>SUMMER SUBLET:
+                <br> <br>
+                Looking to sublet my City Place Apartment (425 S 5th Ave) this summer June through August. Asking $1150 a month. You'll likely have the entire unit to yourself for the summer.
+                <br> <br>
+                Amenities include: Private bedroom and bathroom, In-unit Laundry, A1 location (1 minute walk to Blake Transit Center, 1 minute walk to Downtown Ann Arbor, 5 minute walk to Michigan Union), In-unit squat rack and adjustable dumbbells, 2 separate living areas (both with TV's, Apple TV, & Xbox), Personal mini-fridge and microwave, granite countertops in bathrooms and kitchen. </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property3.jpg" alt="Property Image3">
+              <h2>Property 3</h2>
+              <p>JANUARY-APRIL SUBLEASE AVAILABLE! (with Spring/Summer option)
+                Hello all! I’m looking for someone to sublet my room for the winter 2023 semester and summer (Jan 2023 - either May 2023 or August 2023). Mid-December availability to move in if needed! 
+                <br> <br>
+                Located in VicVillage at 1107 S University Ave… less than 5 minutes from the diag and right above Joe’s Pizza and M36
+                <br> <br>
+                The apartment has 4 bedrooms and each has its own bathroom and has 3 other female roommates
+                <br> <br>
+                The whole apartment is fully furnished and has a great kitchen and living room area.
+                <br> <br>
+                The room has a full XL bed frame, mattress, desk, desk chair, and dresser
+                <br> <br>
+                The building also has great amenities such as a gym, many quiet study spaces, a tech room, printers, a coffee machine, and two rooftop spaces!
+                <br> <br>
+                Rent is open for negotiation and I am happy to show the apartment in person!
+                <br> <br>
+                Please contact me at 858-456-1555 if you are interested! </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property4.jpg" alt="Property Image4">
+              <h2>Property 4</h2>
+              <p>one bed one bath apartment subletting immediately now through august!
+              <br> <br>
+              clubhouse access with pool, gym, all the great amenities. apartment is fully furnished and has own washer/dryer. please dm me with any questions or interest!
+              <br> <br>
+              $1739/month
+              </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property5.jpg" alt="Property Image5">
+              <h2>Property 5</h2>
+              <p>Private Bedroom Available!!!
+                <br> <br>
+                Sublease from end of April-end of august! 1 off street parking spot included, large closet space, in unit laundry and great window lighting! Unit is one level with access to living room, kitchen, and bathroom. Less than 1 minute to the IM and 10 to central campus! Multiple rooms available in the house if you have a group, but single bedrooms available!
+                <br> <br>
+                Rent is around $700 but negotiable, message me with any inquiries! </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property6.jpg" alt="Property Image6">
+              <h2>Property 6</h2>
+              <p>Hi! My roommate and I are looking to sublease our two rooms in Vic Village this summer! The lease will go through the end of July. It is a 6-bedroom apartment and each bedroom has its own full private bathroom, hallway, two-door closet, and storage space. Located on the 8th floor, each window in the apartment overlooks Ann Arbor and Central Campus — you can see the Diag from the living room! The apartment is fully furnished, is full of natural light in every room, and includes free wifi. It also features: 
+                <br> <br>
+                - In-unit laundry (washer and dryer)
+                - Electric stove and oven
+                - Two NEST AC/Heat units to control either the bedroom or living space temperatures
+                - Microwave
+                - Dishwasher
+                - Widescreen television
+                - Full-sized refrigerator/freezer
+                Included furniture in each bedroom:
+                - Bed frame + mattress 
+                - Two dressers (can fit beneath the bed or in the closet to save space)
+                - Desk and office chair 
+                <br> <br>
+                Vic Village is centrally located at the corner of South University Ave. and East University Ave. — within walking distance to anywhere in Ann Arbor. The building features on-site maintenance services that are easy to request through the resident portal, a well-equipped gym and workout studio, study rooms on multiple levels, and an easily accessible trash/recycling disposal. Additionally, the building features two rooftop spaces — the main rooftop features spacious seating, a fire pit, a full-size barbeque grill, and outdoor television perfect for summer nights! 
+                <br> <br>
+                The building is additionally situated right above Joe’s Pizza, SoulCycle, and an ATM and is within a 1-5 minute walk as many popular restaurants and bars (Ricks, Good Time Charleys, Brown Jug, Starbucks, No Thai, Pizza House, Maize and Blue Deli, and more). 
+                Please reach out to myself or Skylar Sakis for more information! We are easiest reached by text or email. 
+                <br> <br>
+                Reilly:
+                - Phone: 310-617-6236
+                - Email: rmbrum@umich.edu
+                Skylar:
+                - Phone: 248-303-6908 
+                - Email: skysakis@umich.edu </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property7.jpg" alt="Property Image7">
+              <h2>Property 7</h2>
+              <p>Summer Lease Take Over for female only (1 May-2 August – alternatively 1 April-2 August)
+                <br> <br>
+                Ideal location: Landmark - 5 min away from Ross and the Diag. and 7 min away from State Street. Close to town favourite restaurants (no-thai!) and grocery store (Target).
+                <br> <br>
+                Fully furnished 4-bedroom/2-bathroom apartment.
+                <br> <br>
+                Fully furnished private bedroom with locks, full-size bed, desk, TV, mirrored closet
+                <br> <br>
+                Huge discount on rent (current price = $ 1240)
+                <br> <br>
+                Bonus: free pillow, duvet, duvet cover and fitted sheet as well as bath towels, hangers, waste bin, plates, bowls, cutlery, etc
+                Fantastic amenities including private parking, in-unit washer and dryer, dishwasher, AC, gym, sunbathing deck with hot tub, study room, security guard.
+                <br> <br>
+                Please DM me if interested! </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property8.jpg" alt="Property Image8">
+              <h2>Property 8</h2>
+              <p>Looking for a female roommate beginning July 2023.
+                <br> <br>
+                You will be welcomed into a FULLY FURNISHED apartment (bedroom is fully furnished as well but for sake of current roomate's privacy empty room is shown), where you will only need to bring your clothes, toiletries, personal items and cleaning supplies.
+                <br> <br>
+                This 1,150 sq. foot apartment features in unit washer/dryer, balcony, private room/bath/linen closet. Public transportation is right outside the complex and will take you directly onto campus - or wherever you need to go.
+                <br> <br>
+                There is also free parking, pool, fitness center, and barbecue area. It is 1.25 miles from the big house, and right next to the freeway and briarwood mall.
+                <br> <br>
+                Pricing is $975 before half of other rental costs (ex: utlities). Please message me for address and further details! </p>
+            </div>
+            <div tabindex = "0" class="property-card">
+              <img src="images/property9.jpg" alt="Property Image9">
+              <h2>Property 9</h2>
+              <p>Hi! Looking to sublet a large, private room in a 5 bedroom, 2 bath house for the Summer from May-August 2023.
+                <br> <br>
+                Rent is $1,030. Bedroom is fully furnished with a bed, desk, and dresser. Roommates are very friendly (four females) and are undergraduate students.
+                <br> <br>
+                The room is large with a spacious closet! Driveway parking is available for no extra cost. Spacious kitchen, living room, front porch, and basement for storage and laundry. Please message me if you are interested! </p>
+            </div>
+          </section>
+          <section class="map-section">
+            <p>Interactive Map</p>
+          </section>
+        </main>
+      </body>
+</html>
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+      <link rel="stylesheet" type="text/css" href="css/post.css">
+    <title>RentMe</title>
+</head>
+<body>
+    <header>
+      <h1>RentMe.com</h1>
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li class = "active"><a href="post.html">Post</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      <h2 id = "main">Form Submission</h2>
+      <form action="your-submit-script.php" method="post" enctype="multipart/form-data">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="building">Type of Building:</label>
+        <select id="building" name="building">
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="condo">Condo</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="other">Other:</option>
+        </select>
+        <input type="text" id="building-other" name="building-other" placeholder="Please specify">
+    
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="number" id="bedrooms" name="bedrooms" min="0" required>
+    
+        <label for="bathrooms">Bathrooms:</label>
+        <input type="number" id="bathrooms" name="bathrooms" min="0" required>
+    
+        <label for="price">Price per Month:</label>
+        <input type="number" id="price" name="price" min="0" required>
+    
+        <label for="utilities">Utilities per Month:</label>
+        <input type="number" id="utilities" name="utilities" min="0" required>
+    
+        <label for="sqft">Square Feet:</label>
+        <input type="number" id="sqft" name="sqft" min="0" required>
+    
+        <label for="address-street">Street Address:</label>
+        <input type="text" id="address-street" name="address-street" required>
+    
+        <label for="address-city">City:</label>
+        <input type="text" id="address-city" name="address-city" required>
+    
+        <label for="address-state">State:</label>
+        <select id="address-state" name="address-state" required>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+
+        <input type="submit" value="Submit">
+    
+</body>
+</html>
