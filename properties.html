@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-      <link rel="stylesheet" type="text/css" href="css/new.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
 
       <link href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css' rel='stylesheet' />
       <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js"></script>
@@ -17,7 +17,7 @@
         <header>
           <h1>RentMe.com</h1>
           <nav>
-            <ul>
+            <ul class="left-nav">
               <li><a href="home.html">Home</a></li>
               <li class = "active"><a href="properties.html">Properties</a></li>
               <li><a href="post.html">Post</a></li>
@@ -57,7 +57,7 @@
               <p>JANUARY-APRIL SUBLEASE AVAILABLE! (with Spring/Summer option)
                 Hello all! I’m looking for someone to sublet my room for the winter 2023 semester and summer (Jan 2023 - either May 2023 or August 2023). Mid-December availability to move in if needed! 
                 <br> <br>
-                Located in VicVillage at 1107 S University Ave… less than 5 minutes from the diag and right above Joe’s Pizza and M36
+                Located in Vic Village at 1107 S University Ave… less than 5 minutes from the diag and right above Joe’s Pizza and M36
                 <br> <br>
                 The apartment has 4 bedrooms and each has its own bathroom and has 3 other female roommates
                 <br> <br>
@@ -179,14 +179,24 @@
         })
 
         map.addControl(new tt.NavigationControl());
+        
+        var property1 = new tt.Marker().setLngLat([-83.74209002765453, 42.27311216491128]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 1</h3><p>SUMMER SUBLEASE as soon as April 19th through end of August...</p>')).addTo(map);
+        
+        var property2 = new tt.Marker().setLngLat([-83.74587194232859, 42.27675992338449]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 2</h3><p>SUMMER SUBLET: Looking to sublet my City Place Apartment...</p>')).addTo(map);
+      
+        var property3 = new tt.Marker().setLngLat([-83.73535720909169, 42.27521288165937]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 3</h3><p>JANUARY-APRIL SUBLEASE AVAILABLE! (with Spring/Summer option)... </p>')).addTo(map);
 
-        var property1 = new tt.Marker().setLngLat([-83.7421, 42.2808]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 1</h3><p>SUMMER SUBLEASE as soon as April 19th through end of August...</p>')).addTo(map);
+        var property4 = new tt.Marker().setLngLat([-83.753005, 42.280177]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 4</h3><p>one bed one bath apartment subletting immediately now through august!...</p>')).addTo(map);
 
-        var property2 = new tt.Marker().setLngLat([-83.738222, 42.277309]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 2</h3><p>SUMMER SUBLET: Looking to sublet my City Place Apartment...</p>')).addTo(map);
+        var property5 = new tt.Marker().setLngLat([-83.74419693138347, 42.27297669264657]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 5</h3><p>Private Bedroom Available!!! Sublease from end of April-end of august!!...</p>')).addTo(map);
 
-        var property3 = new tt.Marker().setLngLat([-83.740891, 42.273184]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 3</h3><p>JANUARY-APRIL SUBLEASE AVAILABLE! (with Spring/Summer option)... </p>')).addTo(map);
-
-        var property4 = new tt.Marker().setLngLat([-83.755005, 42.280177]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 4</h3><p>one bed one bath apartment subletting immediately now through august!...</p>')).addTo(map);
+        var property6 = new tt.Marker().setLngLat([-83.73546732009169, 42.275229165937]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 6</h3><p>Hi! My roommate and I are looking to sublease our two rooms in Vic Village this summer!...</p>')).addTo(map);
+      
+        var property7 = new tt.Marker().setLngLat([-83.73287596644526, 42.274516046816856]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 7</h3><p>Summer Lease Take Over for female only (1 May-2 August – alternatively 1 April-2 August)...</p>')).addTo(map);
+      
+        var property8 = new tt.Marker().setLngLat([-83.76335861967844, 42.248847491352386]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 8</h3><p>Looking for a female roommate beginning July 2023....</p>')).addTo(map);
+      
+        var property9 = new tt.Marker().setLngLat([-83.73545796300685, 42.27141119462152]).setPopup(new tt.Popup({ offset: 25 }).setHTML('<h3>Property 9</h3><p>Hi! Looking to sublet a large, private room in a 5 bedroom, 2 bath house for the Summer from May-August 2023....</p>')).addTo(map);
 
 
         </script>
